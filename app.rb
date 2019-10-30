@@ -23,4 +23,5 @@ class App < Sinatra::Base
     @num1 = params[:num1].to_i 
     @num2 = params[:num2].to_i
     "The first param is #{@num1}, the second param is #{@num2}"
+  end
 end
