@@ -19,7 +19,7 @@ class App < Sinatra::Base
     "Good, #{@user_name}."
   end 
   
-  get '/multiply/:num1/:num2'
+  get '/multiply/:num1/:num2' do
     @num1 = params[:num1].to_i 
     @num2 = params[:num2].to_i
     "The first param is #{@num1}, the second param is #{@num2}"
